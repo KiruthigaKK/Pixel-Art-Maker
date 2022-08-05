@@ -42,20 +42,20 @@ document.addEventListener('DOMContentLoaded', function() {
 specified numbers and changes the background color of the
  cells on click event.
 * @param {number} height
-* @param {number} weight
+* @param {number} width
 */
 function makeGrid(height, width) {
     // getting the table element and assigning it to 'tbl'.
     const tbl = document.getElementsByTagName('table')[0];
 
     /*Checking for any previous table, if there is a table
-    element with child then we are removing it*/
+    element with child then removing it*/
     while (tbl.hasChildNodes()) {
         tbl.removeChild(tbl.firstChild)
     }
 
-    /* Table creation. We are using for loop to iterate
-    based on the input number choosen by the user */
+    /* Table creation. Using for loop to iterate based 
+    on the input number choosen by the user */
     for (let j = 0; j < height; j++) {
         // table row creation
         let row = tbl.insertRow(j);
